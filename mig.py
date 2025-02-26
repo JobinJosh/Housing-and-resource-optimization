@@ -103,7 +103,7 @@ def calculate_resource_usage(persons):
 
 # Streamlit UI
 st.title('Economic Migrants')
-st.subheader('Venezuelan Migrants')
+st.subheader('Venezuelan Migrants in Colombia')
 
 num_persons = st.number_input('Number of Persons', min_value=1, step=1, value=10000)
 income_min = st.number_input('Minimum Salary ($)', min_value=0, value=300)
