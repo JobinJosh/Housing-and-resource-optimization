@@ -102,8 +102,8 @@ def calculate_resource_usage(persons):
     return accommodation_water, accommodation_electricity, accommodation_land
 
 # Streamlit UI
-st.title('Economic Migrants')
-st.subheader('Venezuelan Migrants in Colombia')
+st.title(' Migrants Housing choices')
+st.subheader('')
 
 num_persons = st.number_input('Number of Persons', min_value=1, step=1, value=10000)
 income_min = st.number_input('Minimum Salary (US Dollar)', min_value=0, value=300)
