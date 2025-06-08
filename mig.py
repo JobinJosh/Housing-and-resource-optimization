@@ -102,7 +102,7 @@ def calculate_resource_usage(persons):
     return accommodation_water, accommodation_electricity, accommodation_land
 
 # Streamlit UI
-st.title(' Migrants Housing choices')
+st.title(' Housing choices of people')
 st.subheader('')
 
 num_persons = st.number_input('Number of Persons', min_value=1, step=1, value=35000)
