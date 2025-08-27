@@ -16,9 +16,9 @@ class Person:
 
     def choose_accommodation(self):
         """Determine housing based on income, education, and social status"""
-        if self.income > 650:
+        if self.income > 1000:
             self.accommodation = random.choice(['Luxury Apartment', 'House'])
-        elif 300 <= self.income <= 650:
+        elif 300 <= self.income <= 1000:
             self.accommodation = 'Standard Apartment'
         elif self.income < 300 and self.social_status == 'Single':
             self.accommodation = random.choice(['Shared Housing', 'Public Housing'])
@@ -141,4 +141,5 @@ if st.button('Run Model'):
     st.write(f"Total Water Usage: {sum(accommodation_water.values()):.2f} liters per day")
     st.write(f"Total Electricity Usage: {sum(accommodation_electricity.values()):.2f} kWh per day")
     st.write(f"Total Land Required: {sum(accommodation_land.values()):.2f} sqm")
+
 
