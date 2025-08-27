@@ -50,7 +50,7 @@ def create_persons_and_plot(num_persons, education_probs, employment_probs, inco
 
     # Plot the accommodation distribution
     fig, ax = plt.subplots(figsize=(10, 6))
-    bars = ax.bar(accommodation_counts.keys(), accommodation_counts.values(), color=['blue', 'green', 'red', 'purple', 'orange', 'gray'])
+    bars = ax.bar(accommodation_counts.keys(), accommodation_counts.values(), color=['blue', 'green', 'red', 'purple', 'orange', 'blue'])
     ax.set_xlabel('Accommodation Type')
     ax.set_ylabel('Number of People')
     ax.set_title(f'Accommodation Choices of {num_persons} People')
@@ -141,3 +141,4 @@ if st.button('Run Model'):
     st.write(f"Total Water Usage: {sum(accommodation_water.values()):.2f} liters per day")
     st.write(f"Total Electricity Usage: {sum(accommodation_electricity.values()):.2f} kWh per day")
     st.write(f"Total Land Required: {sum(accommodation_land.values()):.2f} sqm")
+
