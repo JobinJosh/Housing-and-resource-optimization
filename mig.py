@@ -106,8 +106,8 @@ st.title(' Housing choices of people')
 st.subheader('')
 
 num_persons = st.number_input('Number of Persons', min_value=1, step=1, value=35000)
-income_min = st.number_input('Minimum Salary (US Dollar)', min_value=0, value=300)
-income_max = st.number_input('Maximum Salary (US Dollar)', min_value=0, value=650)
+income_min = st.number_input('Minimum Salary (US Dollar)', min_value=0, value=0)
+income_max = st.number_input('Maximum Salary (US Dollar)', min_value=0, value=1000)
 
 education_probs = [
     st.slider('No Education Probability', 0.0, 1.0, 0.03),
@@ -141,5 +141,6 @@ if st.button('Run Model'):
     st.write(f"Total Water Usage: {sum(accommodation_water.values()):.2f} liters per day")
     st.write(f"Total Electricity Usage: {sum(accommodation_electricity.values()):.2f} kWh per day")
     st.write(f"Total Land Required: {sum(accommodation_land.values()):.2f} sqm")
+
 
 
